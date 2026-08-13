@@ -38,9 +38,9 @@ yjsp-tcs-rp1-thermal/
 | └── st_transient_parameters.m
 │
 └── figures/
-| ├── st_steady_preTRN.png
-| ├── st_transient_ODE1.png
-| └── st_transient.png
+  ├── st_steady_preTRN.png
+  ├── st_transient_ODE1.png
+  └── st_transient.png
 ```
 
 ---
