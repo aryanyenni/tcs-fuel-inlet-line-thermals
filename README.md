@@ -44,5 +44,10 @@ yjsp-tcs-rp1-thermal/
 ---
 
 ### Assumptions / Limitations
+**Modeling Assumptions:**
+- Lumped system approximation - RP-1 fluid is given a fully developed profile and geometric symmetry, meaning that the fluid and its line are treated as a single uniform temperature node changing only as a function of time.
+- Fluid properties are evaluated at the film temperature, and held constant across simulations. No properties are a property of temperature.
+- LOX temperature is held constant at 90K, a buffer assumed due to phase change
+
 ### Results
 ### Path Forward
