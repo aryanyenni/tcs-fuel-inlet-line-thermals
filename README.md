@@ -1,7 +1,14 @@
 ## Thermal Control System - 01 Fuel Inlet Line Thermal Analysis
 
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-blue)
+![Simulink](https://img.shields.io/badge/Simulink-R2024a-blue)
+
+
 ### Background
 TCS - The Yellow Jacket Space Program (YJSP) is developing Elytra, a space-bound liquid KeroLOX rocket. The Thermal Control System is responsible for maintaining all vehicle components within their operational temperature ranges during ground operations.
+
+This repository documents the first-pass thermal analysis of the RP-1 Inlet Line for YJSP's Elytra vehicle, conducted as part of the Thermal Control System (TCS) responsible engineering effort. The analysis covers steady-state heating solutions and transient insulation trade studies for ground operations.
 
 ---
 
@@ -60,13 +67,13 @@ yjsp-tcs-rp1-thermal/
 
 ### Path Forward
 **Near Term**
-- Obtain confirmed pip material callout from CAD to replace -- PLACEHOLDERS --.
-- Add radiation heat transfer effects between Fuel and LOX inlet lines and other significant regions.
+- [ ] Obtain confirmed pip material callout from CAD to replace -- PLACEHOLDERS --.
+- [ ] Add radiation heat transfer effects between Fuel and LOX inlet lines and other significant regions.
 
 **Medium Term**
-- ANSYS Mechanical Transient Thermal - geometry-resolved model of the Fuel inlet line and surrounding powerhead structures, captures temperature gradients and fitting/mount conduction paths.
-- Validate and build on Simulink Results against ANSYS at matched boundary conditions.
+- [ ] ANSYS Mechanical Transient Thermal - geometry-resolved model of the Fuel inlet line and surrounding powerhead structures, captures temperature gradients and fitting/mount conduction paths.
+- [ ] Validate and build on Simulink Results against ANSYS at matched boundary conditions.
 
 **Long Term**
-- ANSYS Fluent conjugate heat transfer - full powerhead thermal environment including natural convection flow fields, radiation effects, and passthrough / other complex geometries.
-- Thermal instrumentation on Component Test Stand (CTS) and full system validation and qualification testing for experimental validation of model predictions.
+- [ ] ANSYS Fluent conjugate heat transfer - full powerhead thermal environment including natural convection flow fields, radiation effects, and passthrough / other complex geometries.
+- [ ] Thermal instrumentation on Component Test Stand (CTS) and full system validation and qualification testing for experimental validation of model predictions.
