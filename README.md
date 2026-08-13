@@ -19,6 +19,7 @@ In this low fidelity 1D sim, the dominant heat transfer mechanisms include:
 ---
 
 ### Repo Structure
+```
 yjsp-tcs-rp1-thermal/
 │
 ├── README.md
@@ -40,6 +41,7 @@ yjsp-tcs-rp1-thermal/
 | ├── st_steady_preTRN.png
 | ├── st_transient_ODE1.png
 | └── st_transient.png
+```
 
 ---
 
