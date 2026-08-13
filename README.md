@@ -58,10 +58,19 @@ yjsp-tcs-rp1-thermal/
 - Fluid properties are evaluated at the film temperature, and held constant across simulations. No properties are a property of temperature.
 - LOX temperature is held constant at 90K, a buffer assumed due to phase change
 
+**Modeling Limitations:**
+- 1D lumped model cannot resolve local temperature gradients.
+- Signification radiation effects excluded.
+- Structural conduction through brackets, mounts, and adjacent structures excluded.
+- Cannot take temperature as a function of x, y, and z or other position coordinates.
+
 ---
 
 ### Results
+Full figures available in ['figures/'](figures/)
 
+![Preliminary Thermal Resistance Network](figures/st_steady_preTRN.png)
+![Insulation Thickness Sweep](figures/st_transient.png)
 
 ---
 
@@ -77,6 +86,12 @@ yjsp-tcs-rp1-thermal/
 **Long Term**
 - [ ] ANSYS Fluent conjugate heat transfer - full powerhead thermal environment including natural convection flow fields, radiation effects, and passthrough / other complex geometries.
 - [ ] Thermal instrumentation on Component Test Stand (CTS) and full system validation and qualification testing for experimental validation of model predictions.
+
+---
+
+### References
+- Cengel, Y.A., & Ghajar, A. J. *Heat and Mass Transfer* McGraw-Hill.
+- Cebeci, T. (1974). *Free Convective Heat Transfer From Slender Cylinders Subject to Uniform Wall Heat Flux*. ['references/Cebeci1974.pdf'](references/Cebeci1974.pdf)
 
 ---
 
