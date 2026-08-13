@@ -15,6 +15,7 @@ In this low fidelity 1D sim, the dominant heat transfer mechanisms include:
 - Natural convection between powerhead air and Fuel Inlet Line, LOX Inlet Line, and outer tank wall interior
 - Forced external convection between the outer tank wall exterior and the freestream
 - Conduction through non-moving fluids, solid lines, and insulation
+
 ---
 
 ### Repo Structure
@@ -39,6 +40,7 @@ yjsp-tcs-rp1-thermal/
 | ├── st_steady_preTRN.png
 | ├── st_transient_ODE1.png
 | └── st_transient.png
+
 ---
 
 ### Assumptions / Limitations
