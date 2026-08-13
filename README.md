@@ -1,7 +1,6 @@
 ## Thermal Control System - 01 Fuel Inlet Line Thermal Analysis
 
 ### Background
-
 TCS: The Yellow Jacket Space Program (YJSP) is developing Elytra, a space-bound liquid KeroLOX rocket. The Thermal Control System is responsible for maintaining all vehicle components within their operational temperature ranges during ground operations.
 ---
 
