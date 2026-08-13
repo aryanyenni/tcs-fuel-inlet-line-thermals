@@ -1,8 +1,8 @@
 ## Thermal Control System - 01 Fuel Inlet Line Thermal Analysis
 
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![MATLAB](https://img.shields.io/badge/MATLAB-R2024a-blue)
-![Simulink](https://img.shields.io/badge/Simulink-R2024a-blue)
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
+![MATLAB](https://img.shields.io/badge/MATLAB-R2025a-blue)
+![Simulink](https://img.shields.io/badge/Simulink-R2025a-blue)
 
 
 ### Background
@@ -77,3 +77,9 @@ yjsp-tcs-rp1-thermal/
 **Long Term**
 - [ ] ANSYS Fluent conjugate heat transfer - full powerhead thermal environment including natural convection flow fields, radiation effects, and passthrough / other complex geometries.
 - [ ] Thermal instrumentation on Component Test Stand (CTS) and full system validation and qualification testing for experimental validation of model predictions.
+
+---
+
+### Author
+Aryan Yenni - Thermal Control System Responsible Engineer
+Yellow Jacket Space Program, Georgia Institute of Technology
