@@ -49,5 +49,22 @@ yjsp-tcs-rp1-thermal/
 - Fluid properties are evaluated at the film temperature, and held constant across simulations. No properties are a property of temperature.
 - LOX temperature is held constant at 90K, a buffer assumed due to phase change
 
+---
+
 ### Results
+
+
+---
+
 ### Path Forward
+**Near Term**
+- Obtain confirmed pip material callout from CAD to replace -- PLACEHOLDERS --.
+- Add radiation heat transfer effects between Fuel and LOX inlet lines and other significant regions.
+
+**Medium Term**
+- ANSYS Mechanical Transient Thermal - geometry-resolved model of the Fuel inlet line and surrounding powerhead structures, captures temperature gradients and fitting/mount conduction paths.
+- Validate and build on Simulink Results against ANSYS at matched boundary conditions.
+
+**Long Term**
+- ANSYS Fluent conjugate heat transfer - full powerhead thermal environment including natural convection flow fields, radiation effects, and passthrough / other complex geometries.
+- Thermal instrumentation on Component Test Stand (CTS) and full system validation and qualification testing for experimental validation of model predictions.
