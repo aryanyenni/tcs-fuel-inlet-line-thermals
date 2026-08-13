@@ -35,7 +35,6 @@ cp_RP1 = 2000;  % {J/kg*K} effective specific heat -- PLACEHOLDER --
 
 t_sim = 5400;   % {s} 1.5 hours
 
-colors = lines(length(t_ins_range));
 
 %% ODE2: Boundary/Initial Conditions, Material/Geometry, Setup
 % Geometry
@@ -108,33 +107,35 @@ L = 0.125;      % {m}
 D = 0;          % {m} not needed for case: 'vertical_plate'
 
 
-%% MATLAB Function 1: R = Rconv(h, A)
-% Inputs: h, A
-% Output: R = 1/(h*A)
-
-
 %% Plotting
 
 figure;
 subplot(2, 2, 1); hold on;
-    xlabel('Time (s)')
-    ylabel('RP-1 Line Temperature (K)')
+    xlabel('Time {s}')
+    ylabel('RP-1 Line Temperature {K}')
     yline(240, 'r--', 'Gelling Threshold')
 
     grid on
 
 subplot(2, 2, 2); hold on;
-    xlabel('Time (s)')
+    xlabel('Time {s}')
     ylabel('Nusselt Number (Nu)')
     
     grid on
 
-% subplot(2, 2, 3); hold on;
-%     xlabel('Time (s)')
-%     ylabel('IT-3 Temperature')
-% 
-%     grid on
+subplot(2, 2, 3); hold on;
+    xlabel('Time {s}')
+    ylabel('IT-3 Temperature {K}')
 
+    grid on
+    
+subplot(2, 2, 4); hold on;
+    xlabel('Time {s}')
+    ylabel('Nusselt Numbers (Nu)')
+
+    grid on
+
+colors = lines(length(t_ins_range));
 legend_labels = {};
 
 for i = 1:length(t_ins_range)
@@ -153,6 +154,9 @@ for i = 1:length(t_ins_range)
     T_IT3 = out.T2.Data;
     t = out.T.Time;
     Nu = out.Nu.Data;
+    Nu1 = out.Nu1.Data;
+    Nu2 = out.Nu2.Data;
+    Nu3 = out.Nu3.Data;
     h = out.h.Data;
 
     if t_ins == 0
@@ -161,14 +165,19 @@ for i = 1:length(t_ins_range)
         legend_labels{i} = sprintf('t = %d mm', t_ins*1000);
     end
 
+    
+
     subplot(2, 2, 1); hold on;
     plot(t, T_RP1, 'Color', colors(i,:), 'LineWidth', 1.5);
 
-    % subplot(2, 2, 3); hold on;
-    % plot(t, T_IT3, 'Color', colors(i,:), 'LineWidth', 1.5);
+    subplot(2, 2, 3); hold on;
+    plot(t, T_IT3, 'Color', colors(i,:), 'LineWidth', 1.5);
 
-    subplot(2, 2, 2);
+    subplot(2, 2, 2); hold on;
     plot(t, Nu, 'Color', colors(i,:), 'LineWidth', 1.5);
+
+    subplot(2, 2, 4); hold on;
+    plot(t, Nu2, 'Color', colors(i,:), 'LineWidth', 1.5);
 
 end
 
@@ -180,9 +189,13 @@ subplot(2, 2, 2); legend(legend_labels, 'Location', 'northeast')
     xlim([0 t_sim])
     ylim([min(Nu) max(Nu)*1.1])
 
-% subplot(2, 2, 3); legend(legend_labels, 'Location', 'northeast')
-%     xlim([0 t_sim])
-%     ylim([min(T_IT3) max(T_IT3)*1.1])
+subplot(2, 2, 3); legend(legend_labels, 'Location', 'northeast')
+    xlim([0 t_sim])
+    ylim([min(T_IT3) max(T_IT3)*1.1])
+
+subplot(2, 2, 4); legend(legend_labels, 'Location', 'northeast')
+    xlim([0 t_sim])
+    ylim([0 max(Nu2)])
 
 
 %% Documentation / Theory
