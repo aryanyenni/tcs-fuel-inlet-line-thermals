@@ -67,11 +67,11 @@ yjsp-tcs-rp1-thermal/
 ---
 
 ### Results
-Full figures available in ['figures/'](figures/)
+Full figures available in ['figures/'](figures/).
 
 ![Insulation Thickness Sweep](figures/st_transient.png)
 
-Upon coupling the temperature of the fuel inlet line and the temperature of the powerhead air, there is a need for higher fidelity, multi-dimensional transient heat transfer and fluid analysis. Results of this 1D sim show no temperature issues, so more complexity, elements, and modes/paths of heat transfer must be introduced.
+Upon coupling the temperature of the fuel inlet line and the temperature of the powerhead air, it becomes clear that higher fidelity, multi-dimensional transient heat transfer and fluid analysis is necessary. Results of this 1D sim show no temperature issues, so more complexity, elements, and modes/paths of heat transfer must be introduced.
 
 ---
 
