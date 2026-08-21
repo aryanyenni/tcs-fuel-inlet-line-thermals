@@ -37,7 +37,6 @@ yjsp-tcs-rp1-thermal/
 │ ├── getNusselt_natural.m
 │ ├── getNusselt_forced_internal.m
 │ └── getNusselt_forced_external.m
-│ 
 │
 ├── simulink/
 │ ├── st_transient_ODE1.slx
