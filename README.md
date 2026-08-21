@@ -36,7 +36,7 @@ yjsp-tcs-rp1-thermal/
 ├── matlab/
 │ ├── getNusselt_natural.m
 │ ├── getNusselt_forced_internal.m
-│ ├── getNusselt_forced_external.m
+│ └── getNusselt_forced_external.m
 │ 
 │
 ├── simulink/
