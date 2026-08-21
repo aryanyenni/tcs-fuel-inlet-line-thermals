@@ -96,5 +96,5 @@ Upon coupling the temperature of the fuel inlet line and the temperature of the 
 ---
 
 ### Author
-Aryan Yenni - Thermal Control System Responsible Engineer
+Aryan Yenni - Thermal Control System Responsible Engineer,
 Yellow Jacket Space Program, Georgia Institute of Technology
